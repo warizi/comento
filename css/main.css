@@ -1,0 +1,121 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+li {
+    list-style: none;
+}
+
+/* 헤더 */
+.header {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 80px;
+    padding: 0 20px;
+    align-items: center;
+}
+.title {
+    margin: 0;
+}
+.partition_title {
+    width: 4px;
+    height: 25px;
+    border-radius: 2px;
+    margin: 0 20px;
+    border: 2px solid rgb(255, 166, 0);
+}
+.category_item {
+    float: left;
+    font-weight: 500;
+}
+/* 바디 */
+.main {
+    display: flex;
+    flex-direction: row;
+}
+.card_profile_contents {
+    background-color: rgb(255, 232, 201);
+    height: 800px;
+    width: 40%;
+    position: relative;
+}
+.profile_card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    right: -100px;
+    top: 100px;
+}
+.profile_card {
+    background-color: antiquewhite;
+    box-shadow: -5px 5px 20px 4px rgba(0, 0, 0, 0.2);
+    height: 600px;
+    width: 400px;
+}
+.profile_image {
+    margin: 60px 0 30px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.card_name {
+    font-size: 30px;
+}
+.partition {
+    width: 50px;
+    height: 4px;
+    border-radius: 2px;
+    border: 2px solid rgb(255, 166, 0);
+}
+.card_job {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 5px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.card_footer {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+.text_profile_contents {
+    padding: 120px;
+}
+.profile_title {
+    font-size: 50px;
+}
+.info_title {
+    margin: 30px 0 10px;
+}
+.history {
+    line-height: 40px;
+}
+/* 푸터 */
+.footer {
+    padding: 0 20px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo {
+    line-height: 100px;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.call_number {
+    line-height: 100px;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.call_number > span {
+    letter-spacing: 2px;
+}
