@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mine.css">
+    <title>지뢰찾기</title>
+</head>
+<body>
+    <div class="container_grid">
+        <header class="header_grid">
+            <div class="main_header_flex">
+                <img src="./image/mine.png" alt="logo" class="mine_logo">
+                <h1 class="main_title">지뢰찾기</h1>
+                <a href="./index.html" class="home_link">Front-end</a>
+            </div>
+            <nav class="nav_float">
+                <ul class="nav_container">
+                    <li><a href="#">지뢰찾기</a></li>
+                    <li><a href="#">난이도 설정</a></li>
+                    <li><a href="#">다른 게임</a></li>
+                    <li><a href="#">테마</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside class="rank_container">
+            <h2>랭킹</h2>
+            <ol class="rank_list">
+                <li>user1</li>
+                <li>user2</li>
+                <li>user3</li>
+            </ol>
+        </aside>
+        <main>
+            <div class="mine_container">
+                <div class="mine_header mine_container_border">
+                    <div class="mine_number_count" id="remaining_mine">20</div>
+                    <div class="mine_reset_btn">start</div>
+                    <div class="mine_number_count" id="mine_timer">0</div>
+                </div>
+                <div class="mine_main mine_container_border">
+                </div>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </div>
+    <script src="./script/mine.js"></script>
+</body>
+</html>
