@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>자기소개</title>
 </head>
 <body>
@@ -14,42 +14,73 @@
         <h1 class="title">진승현</h1>
         <div class="partition_title"></div>
         <ul class="category">
-            <li class="category_item">Front-end Developer</li>
+            <li class="category_item"><a href="#">Front-end Developer</a></li>
+            <li class="category_item"><a href="./mine.html">지뢰찾기 게임</a></li>
         </ul>
     </header>
     <main class="main">
-        <section class="card_profile_contents">
-            <div class="profile_card">
-                <img class="profile_image" src="/image/id_picture.jpeg" alt="프로필 사진">
-                <h3 class="card_name">진승현</h3>
-                <div class="partition"></div>
-                <span class="card_job">Front-end<br>Developer</span>
-                <div class="card_footer"></div>
-            </div>
-        </section>
-        <section class="text_profile_contents">
-            <h2 class="profile_title">Hello World!</h2>
-            <h4 class="info_title">자기소개</h4>
-            <p class="self_introduction">
-                안녕하세요.
-                <br>
-                사용자에게 최고의 경험을 제공하는 프론트엔드 개발자가 되고자 합니다.
-                <br>
-                새로운 것을 좋아하고 항상 배우는 자세로 임합니다.
-            </p>
-            <h4 class="info_title">준비과정</h4>
-            <p class="history">
-                2022.05 ~ 2023.06 부스트코스 비전공자를 위한 HTML/CSS 코칭스터디 1기 수료
-                <br>
-                2022.10 ~ 탐나는인재 디지털분야
-                <br>
-                2023.03 ~ 앨리스 아카데미 Front-end 과정
-            </p>
-        </section>
+        <div class="section_container">
+            <section class="card_profile_contents">
+                <div class="profile_card">
+                    <img class="profile_image" src="./image/id_picture.jpeg" alt="프로필 사진">
+                    <h3 class="card_name">진승현</h3>
+                    <div class="partition"></div>
+                    <span class="card_job">Front-end<br>Developer</span>
+                    <div class="card_footer"></div>
+                </div>
+            </section>
+            <section class="text_profile_contents">
+                <h2 class="profile_title">Hello World!</h2>
+                <h4 class="info_title">자기소개</h4>
+                <p class="self_introduction">
+                    안녕하세요.
+                    <br>
+                    사용자에게 최고의 경험을 제공하는 프론트엔드 개발자가 되고자 합니다.
+                    <br>
+                    새로운 것을 좋아하고 항상 배우는 자세로 임합니다.
+                </p>
+                <h4 class="info_title">준비과정</h4>
+                <p class="history">
+                    2022.05 ~ 2023.06 부스트코스 비전공자를 위한 HTML/CSS 코칭스터디 1기 수료
+                    <br>
+                    2022.10 ~ 탐나는인재 디지털분야
+                    <br>
+                    2023.03 ~ 앨리스 아카데미 Front-end 과정
+                </p>
+            </section>
+        </div>
+        <div class="section_container">
+            <a name="minesweeper"></a>
+            <section class="minesweeper_description">
+                <h2 class="mine_title">지뢰찾기 게임</h2>
+                <h3 class="mine_sub_title">게임 소개</h3>
+                <p class="mine_info">
+                    지뢰를 모두 찾으면 승리합니다!
+                </p>
+                <h3 class="mine_sub_title">레이아웃</h3>
+                <p class="mine_info">
+                    타이머와 리셋버튼은 1차원 레이아웃으로 Flex를 사용하였습니다.
+                    <br>
+                    지뢰의 배열은 2차원 레이아웃으로 grid를 사용하였습니다.
+                </p>
+            </section>
+            <section class="minesweeper_contents">
+                <div class="mine_container">
+                    <div class="mine_header mine_container_border">
+                        <div class="mine_number_count" id="remaining_mine">20</div>
+                        <div class="mine_reset_btn">start</div>
+                        <div class="mine_number_count" id="mine_timer">0</div>
+                    </div>
+                    <div class="mine_main mine_container_border">
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <span class="logo">Comento</span>
         <span class="call_number"> <span>call</span> : 010-0000-0000</span>
     </footer>
+    <script src="./script/mine.js"></script>
 </body>
 </html>
